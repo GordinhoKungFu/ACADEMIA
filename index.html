@@ -66,9 +66,34 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
-    function salvarcadastro(event){
-        
+
+    function SalvarCadastro(event){
+        event.PreventDefalt();
+        var login = document.getElementById('login').value;
+        var login = document.getElementById('senha').value;
+
+        if(!login||!senha){
+            alert ('Preencha todos os campos');
+            return;
+        }
+
+        set (ref (DB,'usuários')+ login),{
+            login: login,
+            senha: senha
+    
+        };
+
+        then (()=>{
+            alert("Usuário cadastrado com sucesso!");
+            location.href="home.html";
+        })
+
+        .catch((error)=>{
+            console.error("Erro ao salvar",error);
+            alert("Erro ao cadastrar");
+        });
     }
+
   </script>
 
 </body>
