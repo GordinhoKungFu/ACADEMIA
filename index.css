@@ -11,9 +11,9 @@ form {
     width: 300px;
     margin: 180px auto;
     padding: 50px;
-    background-color: #ffffff;
+    background-color: #d5f8ff;
     border-radius: 8px;
-    box-shadow: 0 0 500px rgba(50, 252, 0, 0.1);
+    box-shadow: 0 0 500px #2892a7;
     text-align: center;
 }
 
@@ -34,7 +34,7 @@ input {
 }
 
 input[type="submit"] {
-    background-color: #28a745;
+    background-color: #282aa7;
     color: white;
     border: none;
     cursor: pointer;
@@ -42,5 +42,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #2892a7;
 }

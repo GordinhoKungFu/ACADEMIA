@@ -1,14 +1,10 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Cadastro JS</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
 </head>
 
 <body>
@@ -16,12 +12,11 @@
         <h3>Cadastro</h3>
         <input type="text" placeholder="Login" id="login" required>
         <input type="password" placeholder="Senha" id="senha" required>
-        <input type="email" placeholder="E-mail" id="email" required>
-        <input type="tel" placeholder="Telefone" id="telefone" required>
-        <input type="submit" value="Cadastrar" onclick="logar(); return false">
 
-        <input type="submit" value="Logar" onclick="window.location.href='login.html'">
+        <input type="submit" value="logar" onclick="logar(); return false">
     </form>
+
+
 
     <script>
 
@@ -30,8 +25,7 @@
 
             var login = document.getElementById('login').value;
             var senha = document.getElementById('senha').value;
-            var email = document.getElementById('email').value;
-            var telefone = document.getElementById('telefone').value;
+
 
             if(login == "admin" && senha == "admin"){
                 alert('Sucesso');
@@ -43,8 +37,6 @@
         }
 
     </script>
-
-
 
 </body>
 </html>
